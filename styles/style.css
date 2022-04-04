@@ -89,3 +89,37 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+/* 
+
+.right {
+display: flex;
+justify-content: flex-end;
+}
+
+.left-container {
+display: flex;
+justify-content: flex-start;
+}
+
+.buttons {
+    display:flex;
+    align-items: center;
+}
+
+.forms-and-buttons {
+    display:flex;
+    align-items: center;
+} 
+.right-buttons{
+    display:flex;
+    align-items: baseline;
+}
+.bottom-buttons{
+    display:flex;
+    align-items: flex-end;
+}
+
+.buttons {
+    display:flex;
+    align-items: center;
+}  */
