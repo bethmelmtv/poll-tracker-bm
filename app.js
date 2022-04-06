@@ -118,6 +118,15 @@ closePollButton.addEventListener('click', () => {
     };
 
     pastPolls.push(poll);
+
+    optionAVotes = 0;
+    optionBVotes = 0;
+    question = '';
+    optionAtitle = '';
+    optionBtitle = '';
+    
+    displayCurrentPoll();
+
     displayAllPolls();
 
 });
