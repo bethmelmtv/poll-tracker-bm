@@ -19,60 +19,47 @@
 
     <main>
         <section class='main-section'>
-            <div class='left-container'>
-                <h2>Current Poll</h2>
-                <div class='current-poll-container'>
+            
+            <form>
+                <label>
+                    Question
+                    <input name= "input-question">
+                </label>
+                <label>
+                    <input name="option-one-input">
+                </label>
+                <label>
+                    <input name="option-two-input">
+                </label>
+                <button class="start-button"> start! </button>
+            </form>
 
-                </div>
-                <div class="forms-and-buttons">
-                    <div class="forms">
-                        <label>
-                            Poll Question Input
-                            <input name="poll-question-input" </label>
-                            <label>
-                                Option A
-                                <input name="option-a" />
-                            </label>
-                            <label>
-                                Option B
-                                <input name="option-b" />
-                            </label>
-                            <button id="start-poll-button">Start the Tally!</button>
-                    </div>
-                </div>
-
-                <div class="buttons">
-                    <div id="top-buttons">
-                        <div class="left-buttons">
-                            <h3 id="option-one-name">Option One Default</h3>
-                            <button id="option-one-add">
-                                Add
-                            </button>
-                            <button id="option-one-subtract" class="undo">
-                                Subtract
-                            </button>
-                        </div>
-
-                        <div class="right-buttons">
-                            <h3 id="option-two-name">Option Two Default</h3>
-                            <button id="option-two-add">Add</button>
-                            <button id="option-two-subtract">Subtract</button>
+            <div class="current-poll">
+                <p>Default Question</p>
+                    <div> 
+                        <p class="option-one-title">Option One Title</p>
+                        <p></p>
+                        <button class="option-one-add">+</button>
+                        <p></p>
+                        <button class="option-one-subtract">-</button>
                         </div>
                     </div>
-                    <div class="bottom-buttons">
-                        <button id="finish-game-button"> Finish Game</button>
+
+                    <div>
+                        <p class="option-two-title">Option Two Title</p>
+                        <p></p>
+                        <button class="option-two-add">+</button>
+                        <p></p>
+                        <button class="option-two-subtract">-</button>
                     </div>
-                </div>
+                    <button class="close-poll"> Close Poll</button>
+            </div>
 
-            <div class="right">
-                <div>
-                    <h2>Past Polls</h2>
-                </div>
-                <div id="past-polls-container">
 
-                </div>
-             </div>
-        </div>
+
+            <div class="past-polls-container">
+                Past Polls
+            </div>
 
 
         </section>
