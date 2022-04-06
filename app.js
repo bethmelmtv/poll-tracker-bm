@@ -54,22 +54,22 @@ form.addEventListener('submit', (e) => {
 
 optionOneAddButton.addEventListener('click', () => {
     optionAVotes++;
-    optionAVotesEl.textContent = optionAVotes;
+    displayCurrentPoll();
 });
 
 optionOneSubtractButton.addEventListener('click', () => {
     optionAVotes--;
-    optionAVotesEl.textContent = optionAVotes;
+    displayCurrentPoll();
 });
 
 optionTwoAddButton.addEventListener('click', () => {
     optionBVotes++;
-    optionBVotesEl.textContent = optionBVotes;
+    displayCurrentPoll();
 });
 
 optionTwoSubtractButton.addEventListener('click', () =>{
     optionBVotes--;
-    optionBVotesEl.textContent = optionBVotes;
+    displayCurrentPoll();
 });
 
 function displayCurrentPoll() {
@@ -82,6 +82,7 @@ function displayCurrentPoll() {
     optionBEl.textContent = optionBtitle;
     optionAVotesEl.textContent = optionAVotes;
     optionBVotesEl.textContent = optionBVotes;
+  //were referencing state 
 
     // const currentPoll = renderPoll(defaultQuestion, optionAEl, optionBEl, optionAVotesEl, optionBVotesEl);
     // currentpollEl.append(currentPoll);
@@ -103,13 +104,13 @@ function displayAllPolls() {
     return pastpollEl;
 }
 
-displayAllPolls(); 
-displayCurrentPoll();
+displayAllPolls();  // calling on page load 
+displayCurrentPoll(); // calling on page load 
 
 
 closePollButton.addEventListener('click', () => { 
   
-    const poll = { 
+    const poll = {  //taking current display info and making a new poll object from it  key value pairs to what is in state 
         question: question,
         optionAtitle: optionAtitle,
         optionBtitle: optionBtitle,
@@ -124,7 +125,7 @@ closePollButton.addEventListener('click', () => {
     question = '';
     optionAtitle = '';
     optionBtitle = '';
-    
+
     displayCurrentPoll();
 
     displayAllPolls();
